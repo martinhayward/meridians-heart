@@ -8,13 +8,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Heebo:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=3">
 </head>
 <body>
 <div class="banner"></div>
 <header class="site-header">
   <a class="brand" href="index.html">Meridian's Heart</a>
-  <nav class="main-nav">
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="main-nav" id="main-nav">
     <a href="about-the-author.html" class="active">About The Author</a>
       <a href="excerpts.html">Excerpts</a>
       <a href="on-writing.html">On Writing</a>
@@ -38,8 +41,6 @@
   <p class="reveal">I set out to write a good story.</p>
 
   <p class="reveal">Hopefully, I have achieved a measure of success. I welcome comments, feedback (what worked&hellip;what didn't) and recommendations that might find their way into the second book in the series I am writing, <em>Meridian's Rainbow</em>. I look forward to hearing from you in the near future and sincerely appreciate the precious time you spent in reading Meridian's Heart.</p>
-
-  <p class="reveal">All correspondence can be sent via the <a href="contact.html">contact page</a>.</p>
 
   <div class="divider" aria-hidden="true">
   <svg viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +71,8 @@
     &copy; Meridian's Heart <span id="copyright-year">2018</span>. All rights reserved.
   </div>
 </footer>
-<script src="js/reveal.js"></script>
+<script src="js/reveal.js?v=3"></script>
+<script src="js/nav.js?v=3"></script>
 <script>
   document.getElementById("copyright-year").textContent = new Date().getFullYear();
 </script>
