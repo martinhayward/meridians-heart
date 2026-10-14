@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Meridian's Heart</title>
+<meta name="description" content="Get in touch with author Michael Schreiber.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Heebo:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="banner"></div>
+<header class="site-header">
+  <a class="brand" href="index.html">Meridian's Heart</a>
+  <nav class="main-nav">
+    <a href="about-the-author.html">About The Author</a>
+      <a href="excerpts.html">Excerpts</a>
+      <a href="on-writing.html">On Writing</a>
+      <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+<main>
+
+<div class="page">
+  <h1 class="reveal">Contact</h1>
+  <p class="reveal">Questions, feedback, or thoughts on the story? I'd love to hear from you.</p>
+
+  <form class="contact-form" action="mailto:maschr623@aol.com" method="post" enctype="text/plain">
+    <div class="form-row">
+      <div>
+        <label for="first-name">First Name</label>
+        <input id="first-name" name="First Name" type="text" required>
+      </div>
+      <div>
+        <label for="last-name">Last Name</label>
+        <input id="last-name" name="Last Name" type="text" required>
+      </div>
+    </div>
+    <div>
+      <label for="email">Email Address</label>
+      <input id="email" name="Email" type="email" required>
+    </div>
+    <div>
+      <label for="subject">Subject</label>
+      <input id="subject" name="Subject" type="text" required>
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="Message" rows="6" required></textarea>
+    </div>
+    <button class="submit-btn" type="submit">Submit</button>
+  </form>
+
+  <p class="note reveal" style="margin-top:1rem;">This form opens your email client to send the message directly. If that doesn't work for you, email me straight away below.</p>
+
+  <div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="10" x2="45" y2="10" stroke="currentColor" stroke-width="1"/>
+    <path d="M60 2 L68 10 L60 18 L52 10 Z" stroke="currentColor" stroke-width="1" fill="none"/>
+    <line x1="75" y1="10" x2="120" y2="10" stroke="currentColor" stroke-width="1"/>
+  </svg>
+</div>
+
+  <div class="contact-direct reveal">
+    <p class="reveal"><strong>Michael Schreiber</strong><br>
+    13813 Wisteria Drive<br>
+    Germantown, MD 20874</p>
+    <p class="reveal"><a href="mailto:maschr623@aol.com">maschr623@aol.com</a></p>
+  </div>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-col">
+      <h4>Meridian's Heart</h4>
+      <p>Germantown, Maryland</p>
+    </div>
+    <div class="footer-col">
+      <h4>More</h4>
+      <a href="teachers-guide.html">Teacher's Guide</a>
+        <a href="historical.html">Historical References: Fact or Fiction</a>
+        <a href="cover-art.html">Cover Art</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; Meridian's Heart <span id="copyright-year">2018</span>. All rights reserved.
+  </div>
+</footer>
+<script src="js/reveal.js"></script>
+<script>
+  document.getElementById("copyright-year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
