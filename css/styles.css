@@ -283,7 +283,7 @@ main { flex: 1; }
 
 .fact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: 1.25rem;
   margin-top: 1rem;
 }
@@ -295,18 +295,21 @@ main { flex: 1; }
   padding: 1.5rem 1.3rem 1.3rem;
 }
 
-.fact-card.span-2 { grid-column: span 2; }
+/* each row is packed server-side to sum to exactly 12 columns, so a
+   card is never left alone with empty space beside it */
+.fact-card.span-12 { grid-column: span 12; }
+.fact-card.span-6 { grid-column: span 6; }
+.fact-card.span-4 { grid-column: span 4; }
 .fact-card.span-3 { grid-column: span 3; }
 
 @media (max-width: 900px) {
-  .fact-grid { grid-template-columns: repeat(2, 1fr); }
-  .fact-card.span-3 { grid-column: span 2; }
+  .fact-card.span-3,
+  .fact-card.span-4,
+  .fact-card.span-6 { grid-column: span 6; }
 }
 
 @media (max-width: 600px) {
-  .fact-grid { grid-template-columns: 1fr; }
-  .fact-card.span-2,
-  .fact-card.span-3 { grid-column: span 1; }
+  .fact-card { grid-column: span 12 !important; }
 }
 .fact-card .page-num {
   position: absolute;
